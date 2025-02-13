@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.search.nvim-spectre" },
   --{ import = "astrocommunity.workflow.precognition-nvim" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },

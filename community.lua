@@ -9,7 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.search.nvim-spectre" },
-  --  { import = "astrocommunity.workflow.precognition-nvim" },
+  --{ import = "astrocommunity.workflow.precognition-nvim" },
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 }

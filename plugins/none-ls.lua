@@ -16,6 +16,9 @@ return {
       -- Set a formatter
       -- none_ls.builtins.formatting.stylua,
       -- none_ls.builtins.formatting.prettier,
+      require("null-ls").builtins.formatting.prettier.with {
+        disabled_filetypes = { "yaml", "yml" },
+      },
     })
   end,
 }

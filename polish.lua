@@ -1,4 +1,4 @@
-if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+--if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- This will run last in the setup process and is a good place to configure
 -- things like custom filetypes. This is just pure lua so anything that doesn't
@@ -8,6 +8,6 @@ if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 vim.filetype.add {
   pattern = {
     ["**/templates/.*%.yaml"] = "helm", -- Helm templates
-    ["%.helm/.*%.yaml"] = "helm",       -- Helm chart files
+    ["%.helm/.*%.yaml"] = "helm", -- Helm chart files
   },
 }

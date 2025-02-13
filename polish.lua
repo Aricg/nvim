@@ -5,9 +5,10 @@
 -- fit in the normal config locations above can go here
 
 -- Set up custom filetypes
-vim.filetype.add {
+vim.filetype.add({
   pattern = {
-    ["**/templates/.*%.yaml"] = "helm", -- Helm templates
-    ["%.helm/.*%.yaml"] = "helm", -- Helm chart files
+    ["*/templates/*.yaml"] = "helm",  -- Match files in any templates directory
+    ["**/templates/*.yaml"] = "helm", -- Match nested templates directories
+    ["*.helm/*.yaml"] = "helm",       -- Match helm chart files
   },
-}
+}, { prepend = true }) -- Important: prepend to override default yaml detection

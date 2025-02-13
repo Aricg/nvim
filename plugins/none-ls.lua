@@ -17,7 +17,7 @@ return {
       -- none_ls.builtins.formatting.stylua,
       -- none_ls.builtins.formatting.prettier,
       require("null-ls").builtins.formatting.prettier.with {
-        disabled_filetypes = { "yaml", "yml" },
+        disabled_filetypes = { "yaml", "yml", "helm" }, -- Add helm here
       },
     })
   end,

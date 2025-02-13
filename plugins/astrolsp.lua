@@ -27,6 +27,7 @@ return {
         ignore_filetypes = { -- disable format on save for specified filetypes
           "yaml",
           "yml",
+          "helm", -- Add this line
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
@@ -45,7 +46,17 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      yamlls = { -- Add this YAML server configuration
+        settings = {
+          yaml = {
+            schemaStore = {
+              enable = true,
+              url = "https://www.schemastore.org/api/json/catalog.json",
+            },
+          },
+        },
+        filetypes = { "yaml" }, -- Explicitly only attach to yaml files, not helm
+      },
     },
     -- customize how language servers are attached
     handlers = {

@@ -2,9 +2,13 @@
 -- things like custom filetypes. This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
-vim.filetype.add({
-  pattern = {
-    [".*/templates/.*%.yaml"] = "helm", -- match any path with /templates/ and ending in .yaml
-    [".*%.helm/.*%.yaml"] = "helm", -- match any path with .helm/ in it and ending in .yaml
+vim.filetype.add {
+  extension = {
+    tpl = "gotmpl", -- Set .tpl files as Go templates
   },
-}, { prepend = true })
+  pattern = {
+    [".*/templates/.*%.yaml"] = "helm",
+    [".*%.helm/.*%.yaml"] = "helm",
+  },
+  prepend = true, -- Move inside the main table
+}

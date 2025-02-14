@@ -15,4 +15,12 @@ return {
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
+  { import = "astrocommunity.colorscheme.horizon-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.colorscheme.neosolarized-nvim" },
+  { import = "astrocommunity.colorscheme.neofusion-nvim" },
+  { import = "astrocommunity.colorscheme.night-owl-nvim" },
+  { import = "astrocommunity.colorscheme.aurora" },
+  { import = "astrocommunity.motion.vim-matchup" },
 }

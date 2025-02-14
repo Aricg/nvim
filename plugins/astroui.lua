@@ -11,7 +11,14 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    --colorscheme = "horizon",
+    --colorscheme = "neofusion",
+    colorscheme = "neosolarized",
+    --colorscheme = "neofusion",
+    --colorscheme = "night-owl",
+    --colorscheme = "aurora",
+    --colorscheme = "fluoromachine",
+    --colorscheme = "astrodark",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
